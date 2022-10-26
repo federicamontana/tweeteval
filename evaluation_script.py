@@ -109,7 +109,7 @@ if __name__=="__main__":
     parser.add_argument('--predictions_path', default="./predictions/", type=str, help='Path to predictions files')
     parser.add_argument('--task', default="", type=str, help='Indicate this parameter to get single task detailed results')
 
-    args = parser.parse_args()
+    args = parser.parse_args("")
 
     if args.task == "":
         all_tweeteval_results = {}
